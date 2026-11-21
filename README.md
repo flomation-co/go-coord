@@ -3,6 +3,14 @@
 Coordination for running a Flomation service as more than one copy, using
 only the Postgres database the service already has. No Redis, no queue.
 
+```sh
+go get github.com/flomation-co/go-coord@v0.1.0
+```
+
+```go
+import coord "github.com/flomation-co/go-coord"
+```
+
 | Piece | Use it for | How |
 |---|---|---|
 | `Leader` | A job that should run on one copy at a time (retention, backfills, a scheduler tick) | Session advisory lock on a pinned connection |

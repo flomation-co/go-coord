@@ -1,4 +1,4 @@
-module github.com/flomation-co/coord
+module github.com/flomation-co/go-coord
 
 go 1.26.11
 
